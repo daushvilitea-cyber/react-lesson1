@@ -9,3 +9,4 @@ const Navbar = ({ list }) => {
 };
 
 export default Navbar;
+
