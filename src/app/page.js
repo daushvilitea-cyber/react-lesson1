@@ -43,15 +43,16 @@ const products = [
 const Home = () => {
   return (
     <main>
-      <h1>My Page</h1>
-      {products.map((item) => (
-        <div key={item.id}>
-          <img src={item.image} width="150" />
-          <h3>{item.title}</h3>
-          <p>{item.price}</p>
-          <p>{item.description}</p>
-        </div>
-      ))}
+      <div className="Products">
+        {products.map((item) => (
+          <div key={item.id}>
+            <img src={item.image} width="150" />
+            <h3>{item.title}</h3>
+            <p>{item.price}</p>
+            <p>{item.description}</p>
+          </div>
+        ))}
+      </div>
     </main>
   );
 };
