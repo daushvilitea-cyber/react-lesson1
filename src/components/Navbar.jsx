@@ -1,6 +1,6 @@
 const Navbar = ({ list }) => {
   return (
-    <div>
+    <div className="NAV">
       {list.map((item) => (
         <div key={item.id}>{item.title}</div>
       ))}
@@ -9,3 +9,4 @@ const Navbar = ({ list }) => {
 };
 
 export default Navbar;
+
